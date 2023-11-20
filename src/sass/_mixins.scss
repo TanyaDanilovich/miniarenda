@@ -1,0 +1,31 @@
+//MIXIN
+
+@mixin media-1000 {
+	@media screen and (min-width: 1000px) {
+		@content;
+	}
+}
+
+@mixin media-tablet {
+	@media screen and (min-width: $tablet-width) {
+		@content;
+	}
+}
+
+@mixin media-mobile {
+	@media screen and (min-width: $mobile-big-width) {
+		@content;
+	}
+}
+
+@mixin media-mobilesmall {
+	@media screen and (min-width: $mobile-smoll-width) {
+		@content;
+	}
+}
+
+@mixin media-random($random) {
+	@media screen and (min-width: $random) {
+		@content;
+	}
+}
