@@ -835,7 +835,7 @@ video {
   }
 }
 
-.hover\:animate-swing:hover {
+#navigation-phone:hover svg {
   animation: swing 5s;
 }
 

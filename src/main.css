@@ -33,3 +33,7 @@
     border-top:80px solid transparent;
     border-right:var(--pseudoElementsWidth) solid var(--color-primary-light);
 }
+
+#navigation-phone:hover svg{
+    @apply animate-swing
+}
