@@ -16,23 +16,23 @@ module.exports = {
                 swing: {
                     '20%': {
                         transform: 'rotate3d(0, 0, 1, 15deg)',
-                        transformOrigin: 'top center'
+                        // transformOrigin: 'top center'
                     },
                     '40%': {
                         transform: 'rotate3d(0, 0, 1, -10deg)',
-                        transformOrigin: 'top center'
+                        // transformOrigin: 'top center'
                     },
                     '60%': {
                         transform: 'rotate3d(0, 0, 1, 5deg)',
-                        transformOrigin: 'top center'
+                        // transformOrigin: 'top center'
                     },
                     '80%': {
                         transform: 'rotate3d(0, 0, 1, -5deg)',
-                        transformOrigin: 'top center'
+                        // transformOrigin: 'top center'
                     },
                     to: {
                         transform: 'rotate3d(0, 0, 1, 0deg)',
-                        transformOrigin: 'top center'
+                        // transformOrigin: 'top center'
                     }
                 }
             },

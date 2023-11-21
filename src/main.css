@@ -5,7 +5,10 @@
     :root{
         /* For rgba(255, 115, 179, <alpha-value>) */
         --color-primary-dark:#1d60aa;
+        --color-primary-darker:#123462;
         --color-primary-light:#4ca1ee;
+        --pseudoElementsWidth:2vw;
+        --doublePseudoElementsWidth:4vw;
     }
 }
 
@@ -16,15 +19,17 @@
 }
 
 .navBefore{
+    /*position:absolute;*/
     width:0;
     height:0;
     border-top:80px solid var(--color-primary-dark);
-    border-right:50px solid transparent;
+    border-right:var(--pseudoElementsWidth) solid transparent;
 }
 
 .navAfter{
+    /*position:absolute;*/
     width:0;
     height:0;
     border-top:80px solid transparent;
-    border-right:50px solid var(--color-primary-light);
+    border-right:var(--pseudoElementsWidth) solid var(--color-primary-light);
 }
