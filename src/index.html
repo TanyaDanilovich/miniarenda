@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang = "ru">
-
 <head>
     <meta charset = "UTF-8">
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
@@ -14,6 +13,15 @@
     <!--		rel="stylesheet">-->
     
     <link rel = "stylesheet" href = "./styles.css">
+    <link rel = "stylesheet" href = "swiper/swiper-bundle.min.css"/>
+    <link rel = "stylesheet" href = "swiper/customizeSwiper.css"/>
+    
+    <!--    <link-->
+    <!--            rel = "stylesheet"-->
+    <!--            href = "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"-->
+    <!--    />-->
+    
+    
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Аренда бура</title>
 
@@ -22,9 +30,9 @@
 
 <body class = "body">
 
-<header class = "w-screen">
+<header id = "header" class = "">
     <div>
-        <div id = "header-content" class = "flex w-screen ">
+        <div id = "header-content" class = "flex">
             
             <div id = "logo-container" class = "bg-primary-dark  w-1/4 flex justify-center">
                 <div id = "logo-content" class = "flex m-auto relative">
@@ -129,132 +137,170 @@
     </div>
 </header>
 
+<main>
+    
+    <section id = "main-slider">
+        <h1 class = "w-0 h-0 hidden">Аренда мини техники</h1>
+        
+        <!-- Slider main container -->
+        <div class = "mainSwiper swiper relative">
+            <!-- Additional required wrapper -->
+            <div class = "swiper-wrapper">
+                <!-- Slides -->
+                <div class = "swiper-slide">
+                    <div class = "swiper-img__container relative">
+                        <picture>
+                            <source media = "(min-width: 1300px)"
+                                    srcset = "asetss/images/main-slider/1920px/_DSC2623-1920w.jpg">
+                            <source media = "(min-width: 769px)"
+                                    srcset = "asetss/images/main-slider/1200px/_DSC2623-1200w.jpg">
+                            <source media = "(min-width: 481px)"
+                                    srcset = "asetss/images/main-slider/768px/_DSC2623-768w.jpg">
+                            <source media = "(min-width: 400px)"
+                                    srcset = "asetss/images/main-slider/480px/_DSC2623-480w.jpg">
+                            <source media = "(min-width: 321px)"
+                                    srcset = "asetss/images/main-slider/400px/_DSC2623-400w.jpg">
+                            <source media = "(max-width: 320px)"
+                                    srcset = "asetss/images/main-slider/320px/_DSC2623-320w.jpg">
+                            <img class = "slider-img swiper-img"
+                                 src = "./asetss/images/main-slider/1200px/_DSC2623-1200w.jpg" alt = "">
+                        </picture>
+                        <!--                        <div class = "slider__text__container absolute">-->
+                        <!--                            <p class = "slider__text__title">-->
+                        <!--                                Наша цель - работать для клиента-->
+                        <!--                            </p>-->
+                        <!--                            <p class = "slider__text">-->
+                        <!--                                помогая реализовать даже трудно выполнимые идеи под строительство дома и-->
+                        <!--                                обустройству загородного участка-->
+                        <!--                            </p>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+                <div class = "swiper-slide">
+                    
+                    <div class = "slider-img__container swiper-img__container">
+                        <picture>
+                            <source media = "(min-width: 1300px)"
+                                    srcset = "asetss/images/main-slider/1920px/_DSC4349-1920w.jpg">
+                            <source media = "(min-width: 769px)"
+                                    srcset = "asetss/images/main-slider/1200px/_DSC4349-1200w.jpg">
+                            <source media = "(min-width: 481px)"
+                                    srcset = "asetss/images/main-slider/768px/_DSC4349-768w.jpg">
+                            <source media = "(min-width: 400px)"
+                                    srcset = "asetss/images/main-slider/480px/_DSC4349-480w.jpg">
+                            <source media = "(min-width: 321px)"
+                                    srcset = "asetss/images/main-slider/400px/_DSC4349-400w.jpg">
+                            <source media = "(max-width: 320px)"
+                                    srcset = "asetss/images/main-slider/320px/_DSC4349-320w.jpg">
+                            <img class = "slider-img swiper-img"
+                                 src = "asetss/images/main-slider/1200px/_DSC4349-1200w.jpg" alt = "">
+                        </picture>
+                        <!--                        <div class = "slider__text__container">-->
+                        <!--                            <p class = "slider__text__title">-->
+                        <!--                                Каждый клиент для нас-->
+                        <!--                            </p>-->
+                        <!--                            <p class = "slider__text">-->
+                        <!--                                это новая задача, которую мы стараемся выполнить-->
+                        <!--                                максимально качественно и в срок-->
+                        <!--                            </p>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+                <div class = "swiper-slide">
+                    
+                    <div class = "slider-img__container swiper-img__container">
+                        <picture>
+                            <source media = "(min-width: 1300px)"
+                                    srcset = "asetss/images/main-slider/1920px/_DSC4666-1920w.jpg">
+                            <source media = "(min-width: 769px)"
+                                    srcset = "asetss/images/main-slider/1200px/_DSC4666-1200w.jpg">
+                            <source media = "(min-width: 481px)"
+                                    srcset = "asetss/images/main-slider/768px/_DSC4666-768w.jpg">
+                            <source media = "(min-width: 400px)"
+                                    srcset = "asetss/images/main-slider/480px/_DSC4666-480w.jpg">
+                            <source media = "(min-width: 321px)"
+                                    srcset = "asetss/images/main-slider/400px/_DSC4666-400w.jpg">
+                            <source media = "(max-width: 320px)"
+                                    srcset = "asetss/images/main-slider/320px/_DSC4666-320w.jpg">
+                            <img class = "slider-img swiper-img"
+                                 src = "asetss/images/main-slider/1200px/_DSC4666-1200w.jpg" alt = "">
+                        </picture>
+                        <!--                        <div class = "slider__text__container">-->
+                        <!--                            <p class = "slider__text__title">-->
+                        <!--                                Ямобур со шнеками различных диаметров:-->
+                        <!--                            </p>-->
+                        <!--                            <p class = "slider__text">-->
+                        <!--                                200 mm, 250 mm, 300 mm, 400 mm, 500 mm, 600 mm-->
+                        <!--                            </p>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+                
+                <div class = "swiper-slide">
+                    
+                    <div class = "slider-img__container swiper-img__container">
+                        <picture>
+                            <source media = "(min-width: 1300px)"
+                                    srcset = "asetss/images/main-slider/1920px/_DSC4764-1920w.jpg">
+                            <source media = "(min-width: 769px)"
+                                    srcset = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg">
+                            <source media = "(min-width: 481px)"
+                                    srcset = "asetss/images/main-slider/768px/_DSC4764-768w.jpg">
+                            <source media = "(min-width: 400px)"
+                                    srcset = "asetss/images/main-slider/480px/_DSC4764-480w.jpg">
+                            <source media = "(min-width: 321px)"
+                                    srcset = "asetss/images/main-slider/400px/_DSC4764-400w.jpg">
+                            <source media = "(max-width: 320px)"
+                                    srcset = "asetss/images/main-slider/320px/_DSC4764-320w.jpg">
+                            <img class = "slider-img swiper-img"
+                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg" alt = "">
+                        </picture>
+                        <!--                        <div class = "slider__text__container">-->
+                        <!--                            <p class = "slider__text__title">-->
+                        <!--                                В наличии-->
+                        <!--                            </p>-->
+                        <!--                            <p class = "slider__text">-->
+                        <!--                                шнек диаметром 600 мм-->
+                        <!--                            </p>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            
+            <div class = "swiper-button-prev-my swiper-button-my">
+                <svg class = ""
+                     xmlns = "http://www.w3.org/2000/svg"
+                     shape-rendering = "geometricPrecision"
+                     text-rendering = "geometricPrecision" image-rendering = "optimizeQuality" fill-rule = "evenodd"
+                     clip-rule = "evenodd" viewBox = "0 0 299 511.517">
+                    <path d = "M12.579 75.262C-24.314 10.56 28.16-20.832 64.505 15.117L273.92 215.793c33.44 33.44 33.44 46.491 0 79.93L64.505 496.4c-36.345 35.949-88.819 4.557-51.926-60.146l97.261-180.496L12.579 75.262z"/>
+                </svg>
+            </div>
+            
+            <div class = "swiper-button-next-my swiper-button-my">
+                <svg class = ""
+                     xmlns = "http://www.w3.org/2000/svg"
+                     shape-rendering = "geometricPrecision"
+                     text-rendering = "geometricPrecision" image-rendering = "optimizeQuality" fill-rule = "evenodd"
+                     clip-rule = "evenodd" viewBox = "0 0 299 511.517">
+                    <path d = "M12.579 75.262C-24.314 10.56 28.16-20.832 64.505 15.117L273.92 215.793c33.44 33.44 33.44 46.491 0 79.93L64.505 496.4c-36.345 35.949-88.819 4.557-51.926-60.146l97.261-180.496L12.579 75.262z"/>
+                </svg>
+            </div>
+        
+        
+        </div>
+    
+    </section>
+
+
+</main>
+
 
 <!--<main>-->
-<!--    <section class = "slider">-->
-<!--        <div class = "slider__wrapper">-->
-<!--            <div class = "slider__container swiper">-->
-<!--                <div class = "slider-inner-wrapper swiper-wrapper">-->
-<!--                    <div class = "slider-slide swiper-slide">-->
-<!--                        <div class = "slider-img__container swiper-img__container">-->
-<!--                            <picture>-->
-<!--                                <source media = "(min-width: 1300px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1920px/_DSC2623-1920w.jpg">-->
-<!--                                <source media = "(min-width: 769px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1200px/_DSC2623-1200w.jpg">-->
-<!--                                <source media = "(min-width: 481px)"-->
-<!--                                        srcset = "asetss/images/main-slider/768px/_DSC2623-768w.jpg">-->
-<!--                                <source media = "(min-width: 400px)"-->
-<!--                                        srcset = "asetss/images/main-slider/480px/_DSC2623-480w.jpg">-->
-<!--                                <source media = "(min-width: 321px)"-->
-<!--                                        srcset = "asetss/images/main-slider/400px/_DSC2623-400w.jpg">-->
-<!--                                <source media = "(max-width: 320px)"-->
-<!--                                        srcset = "asetss/images/main-slider/320px/_DSC2623-320w.jpg">-->
-<!--                                <img class = "slider-img swiper-img"-->
-<!--                                     src = "./asetss/images/main-slider/1920px/_DSC2623-1200w.jpg" alt = "">-->
-<!--                            </picture>-->
-<!--                            <div class = "slider__text__container">-->
-<!--                                <p class = "slider__text__title">-->
-<!--                                    Наша цель - работать для клиента-->
-<!--                                </p>-->
-<!--                                <p class = "slider__text">-->
-<!--                                    помогая реализовать даже трудно выполнимые идеи под строительство дома и-->
-<!--                                    обустройству загородного участка-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class = "slider-slide swiper-slide">-->
-<!--                        <div class = "slider-img__container swiper-img__container">-->
-<!--                            <picture>-->
-<!--                                <source media = "(min-width: 1300px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1920px/_DSC4349-1920w.jpg">-->
-<!--                                <source media = "(min-width: 769px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1200px/_DSC4349-1200w.jpg">-->
-<!--                                <source media = "(min-width: 481px)"-->
-<!--                                        srcset = "asetss/images/main-slider/768px/_DSC4349-768w.jpg">-->
-<!--                                <source media = "(min-width: 400px)"-->
-<!--                                        srcset = "asetss/images/main-slider/480px/_DSC4349-480w.jpg">-->
-<!--                                <source media = "(min-width: 321px)"-->
-<!--                                        srcset = "asetss/images/main-slider/400px/_DSC4349-400w.jpg">-->
-<!--                                <source media = "(max-width: 320px)"-->
-<!--                                        srcset = "asetss/images/main-slider/320px/_DSC4349-320w.jpg">-->
-<!--                                <img class = "slider-img swiper-img"-->
-<!--                                     src = "asetss/images/main-slider/1200px/_DSC4349-1200w.jpg" alt = "">-->
-<!--                            </picture>-->
-<!--                            <div class = "slider__text__container">-->
-<!--                                <p class = "slider__text__title">-->
-<!--                                    Каждый клиент для нас-->
-<!--                                </p>-->
-<!--                                <p class = "slider__text">-->
-<!--                                    это новая задача, которую мы стараемся выполнить-->
-<!--                                    максимально качественно и в срок-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class = "slider-slide swiper-slide">-->
-<!--                        <div class = "slider-img__container swiper-img__container">-->
-<!--                            <picture>-->
-<!--                                <source media = "(min-width: 1300px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1920px/_DSC4666-1920w.jpg">-->
-<!--                                <source media = "(min-width: 769px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1200px/_DSC4666-1200w.jpg">-->
-<!--                                <source media = "(min-width: 481px)"-->
-<!--                                        srcset = "asetss/images/main-slider/768px/_DSC4666-768w.jpg">-->
-<!--                                <source media = "(min-width: 400px)"-->
-<!--                                        srcset = "asetss/images/main-slider/480px/_DSC4666-480w.jpg">-->
-<!--                                <source media = "(min-width: 321px)"-->
-<!--                                        srcset = "asetss/images/main-slider/400px/_DSC4666-400w.jpg">-->
-<!--                                <source media = "(max-width: 320px)"-->
-<!--                                        srcset = "asetss/images/main-slider/320px/_DSC4666-320w.jpg">-->
-<!--                                <img class = "slider-img swiper-img"-->
-<!--                                     src = "asetss/images/main-slider/1200px/_DSC4666-1200w.jpg" alt = "">-->
-<!--                            </picture>-->
-<!--                            <div class = "slider__text__container">-->
-<!--                                <p class = "slider__text__title">-->
-<!--                                    Ямобур со шнеками различных диаметров:-->
-<!--                                </p>-->
-<!--                                <p class = "slider__text">-->
-<!--                                    200 mm, 250 mm, 300 mm, 400 mm, 500 mm, 600 mm-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class = "slider-slide swiper-slide">-->
-<!--                        <div class = "slider-img__container swiper-img__container">-->
-<!--                            <picture>-->
-<!--                                <source media = "(min-width: 1300px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1920px/_DSC4764-1920w.jpg">-->
-<!--                                <source media = "(min-width: 769px)"-->
-<!--                                        srcset = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg">-->
-<!--                                <source media = "(min-width: 481px)"-->
-<!--                                        srcset = "asetss/images/main-slider/768px/_DSC4764-768w.jpg">-->
-<!--                                <source media = "(min-width: 400px)"-->
-<!--                                        srcset = "asetss/images/main-slider/480px/_DSC4764-480w.jpg">-->
-<!--                                <source media = "(min-width: 321px)"-->
-<!--                                        srcset = "asetss/images/main-slider/400px/_DSC4764-400w.jpg">-->
-<!--                                <source media = "(max-width: 320px)"-->
-<!--                                        srcset = "asetss/images/main-slider/320px/_DSC4764-320w.jpg">-->
-<!--                                <img class = "slider-img swiper-img"-->
-<!--                                     src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg" alt = "">-->
-<!--                            </picture>-->
-<!--                            <div class = "slider__text__container">-->
-<!--                                <p class = "slider__text__title">-->
-<!--                                    В наличии-->
-<!--                                </p>-->
-<!--                                <p class = "slider__text">-->
-<!--                                    шнек диаметром 600 мм-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class = "slider__button swiper-button-prev"></div>-->
-<!--                <div class = "slider__button swiper-button-next"></div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+
 <!--    <section class = "title separator">-->
 <!--        <h1>АРЕНДА ЯМОБУРА</h1>-->
 <!--        &lt;!&ndash; В МИНСКЕ И МИНСКОЙ ОБЛАСТИ &ndash;&gt;-->
@@ -1143,12 +1189,16 @@
 <!--    </div>-->
 <!--</section>-->
 <!--<script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
-<!--<script src = "js/script.js" type = "module"></script>-->
+<script src = "js/script.js" type = "module"></script>
 <!--<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 <!--<script src = "js/form.js"></script>-->
 <!--<script src = "./js/form_mail.js"></script>-->
 <!--<script src = "js/sweetalert.min.js"></script>-->
 
+
+<script src = "swiper/swiper-bundle.min.js"></script>
+<!--<script src = "swiper/swiper.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
 </body>
 
 </html>

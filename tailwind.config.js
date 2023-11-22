@@ -6,8 +6,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                'primary-darker': '#123462',
                 'primary-dark': '#1d60aa',
                 'primary-light': '#4ca1ee',
+                'primary-white': '#ffffff',
             },
             animation: {
                 swing: 'swing 5s'
@@ -803,6 +805,7 @@ module.exports = {
         },
         scale: {
             0: '0',
+            25: '0.25',
             50: '.5',
             75: '.75',
             90: '.9',

@@ -1,0 +1,35 @@
+.mainSwiper{
+    max-height:85vh;
+}
+
+/*.swiper-img__container picture{*/
+/*    text-align:center;*/
+/*    object-position:center center;*/
+/*    max-height:100%;*/
+/*    overflow:hidden;*/
+/*}*/
+/*.swiper-img__container img{*/
+/*    width:100% !important;*/
+/*    object-fit:cover;*/
+/*}*/
+.swiper-button-my:before{
+    position:absolute;
+    content:'';
+    width:60px;
+    height:50px;
+}
+
+.swiper-button-my:hover:before{
+    border-top:50px solid var(--color-primary-dark);
+}
+
+.swiper-button-prev-my:before{
+    border-top:50px solid var(--color-primary-white);
+    border-right:calc(var(--pseudoElementsWidth) / 2) solid transparent;
+}
+
+.swiper-button-next-my:before{
+    border-top:50px solid var(--color-primary-white);
+    border-left:calc(var(--pseudoElementsWidth) / 2) solid transparent;
+
+}
