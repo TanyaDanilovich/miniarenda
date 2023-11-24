@@ -462,6 +462,7 @@ var Swiper = (function () {
       macos = false;
     }
 
+
     // Android
     if (android && !windows) {
       device.os = 'android';

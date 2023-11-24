@@ -6,10 +6,24 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'primary-darker': '#123462',
-                'primary-dark': '#1d60aa',
-                'primary-light': '#4ca1ee',
-                'primary-white': '#ffffff',
+                'primary-dark-color': '#123462',
+                'primary-main-color': '#1d60aa',
+                'primary-medium-color': '#4ba1ed',
+                'primary-light-color': '#aae0fa',
+                'g': '#696969',
+                'text-color': '#828282',
+                'text-color99': '#a4a6a8',
+                '222': '#bcbcbc',
+                'h': '#ccc',
+                'shadow-color': '#ddd',
+                '7': '#eee',
+                'f': '#f5f5f5',
+                'primary-white-color': ' #d1d1d1',
+                // '':'',
+            },
+            boxShadow: {
+                extraXL: '0px 0px 22px 19px rgb(198 199 200 / 19%)',
+
             },
             animation: {
                 swing: 'swing 5s'

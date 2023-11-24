@@ -34,7 +34,7 @@
     <div>
         <div id = "header-content" class = "flex">
             
-            <div id = "logo-container" class = "bg-primary-dark  w-1/4 flex justify-center">
+            <div id = "logo-container" class = "bg-primary-main-color  w-1/4 flex justify-center">
                 <div id = "logo-content" class = "flex m-auto relative">
                     <svg xmlns = "http://www.w3.org/2000/svg" width = "84px" height = "100px" viewBox = "0 0 84 100">
                         <g id = "surface1">
@@ -54,7 +54,7 @@
             <div id = "header-right-container" class = "w-3/4 flex flex-col">
                 
                 <div id = "header-bottom-content"
-                     class = "flex bg-primary-dark text-white px-[--doublePseudoElementsWidth] py-1.5">
+                     class = "flex bg-primary-main-color text-white px-[--doublePseudoElementsWidth] py-1.5">
                     <div>
                         <a href = "mailto:miniarenda@mail.ru">
                             <span>E-mail:</span>
@@ -105,13 +105,13 @@
                     
                     
                     <div id = "navigation-phone"
-                         class = "flex w-1/3 bg-primary-light text-white justify-center relative">
-                        <div class = "flex border rounded-full bg-primary-dark w-16 h-16  absolute -left-[--pseudoElementsWidth] top-1/2 -translate-y-1/2">
+                         class = "flex w-1/3 bg-primary-medium-color text-white justify-center relative">
+                        <div class = "flex border rounded-full bg-primary-main-color w-16 h-16  absolute -left-[--pseudoElementsWidth] top-1/2 -translate-y-1/2">
                             <div id = "phone-svg"
                                  class = "m-auto">
                                 <svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 24 24"
                                      fill = "currentColor"
-                                     class = "w-10 h-10 svg">
+                                     class = "w-10 h-10 svg scale-75">
                                     <path fill-rule = "evenodd"
                                           d = "M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
                                           clip-rule = "evenodd"/>
@@ -122,7 +122,7 @@
                         
                         <div class = "m-auto relative ">
                             
-                            <h6>Звоните для заказа техники</h6>
+                            <p>Звоните для заказа техники</p>
                             <p>+375 29 694-96-98</p>
                             <a class = "link-absolute" href = "tel:+375296949698"></a>
                         
@@ -138,17 +138,18 @@
 </header>
 
 <main>
+    
     <h1 class = "w-0 h-0">Услуги и аренда мини экскаваторов и другой техники в Минске и Минской области</h1>
-    <p>Сложно представить строительную площадку в Москве без использования услуг спецтехники. Специальная техника
-       (бульдозеры, грейдеры, асфальтоукладчики, самосвалы, мини экскаваторы, краны) применяется для дорожных и
-       строительных работ, планировки участков, вывоза грунта и других материалов. Спецтехника позволяет облегчить труд
-       человека, оптимизировать процесс, сократить сроки проведения мероприятий.
-       Однако покупка землеройной машины или других моделей технического оснащения не всегда оправдана экономически.
-       Особенно если спецтехника требуется для разовых работ. В данном случае выбор склоняется в сторону аренды. Такая
-       услуга имеет ряд неоспоримых преимуществ.</p>
+    <!--    <p>Сложно представить строительную площадку в Москве без использования услуг спецтехники. Специальная техника-->
+    <!--       (бульдозеры, грейдеры, асфальтоукладчики, самосвалы, мини экскаваторы, краны) применяется для дорожных и-->
+    <!--       строительных работ, планировки участков, вывоза грунта и других материалов. Спецтехника позволяет облегчить труд-->
+    <!--       человека, оптимизировать процесс, сократить сроки проведения мероприятий.-->
+    <!--       Однако покупка землеройной машины или других моделей технического оснащения не всегда оправдана экономически.-->
+    <!--       Особенно если спецтехника требуется для разовых работ. В данном случае выбор склоняется в сторону аренды. Такая-->
+    <!--       услуга имеет ряд неоспоримых преимуществ.</p>-->
     
     <section id = "main-slider" class = "relative">
-        <h1 class = "w-0 h-0">Слайдер</h1>
+        <h2 class = "w-0 h-0">Слайдер</h2>
         
         <!-- Slider main container -->
         <div class = "mainSwiper swiper relative">
@@ -301,35 +302,131 @@
     </section>
     
     <section id = "services-section" class = "services-section">
-        <h2> Услуги мини-экскаваторов</h2>
-        <section id = "services-excavator-rent">
-            <h3>Аренда мини экскаваторов</h3>
-            <p>Аренда мини-экскаватора - превосходное решение для выполнения любого типа строительных работ в условиях
-               ограниченного пространства</p>
-        </section>
+        <div class = "container mx-auto">
+            <h2>Услуги мини-экскаваторов</h2>
+            <p>Услуги</p>
+            <div class = "flex flex-wrap gap-2">
+                <section id = "services-excavator-rent" class = "w-1/4 flex flex-col-reverse relative">
+                    <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
+                        <a href = "#">
+                            <h3 class = "uppercase text-primary-medium-color pb-3">Аренда
+                                                                                   мини-экскаваторов</h3>
+                        </a>
+                        <p class = "text-text-color text-justify pb-3">Аренда мини-экскаватора - превосходное решение
+                                                                       для
+                                                                       выполнения
+                                                                       любого типа строительных работ
+                                                                       в
+                                                                       условиях
+                                                                       ограниченного пространства</p>
+                        <a href = "#">
+                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                                Подробнее
+                            </button>
+                        </a>
+                    </div>
+                    
+                    <div class = "transition animate-img service-img w-full aspect-square relative">
+                        <a href = "#" class = "h-full inline-block">
+                            <img class = " h-full object-cover relative z-10 page-transition"
+                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg"
+                                 alt = "Фото мини экскаватра для аренды">
+                        </a>
+                    </div>
+                
+                </section>
+                <section id = "services-boor" class = "w-1/4 flex flex-col-reverse relative">
+                    <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
+                        <a href = "#">
+                            <h3 class = "uppercase text-primary-medium-color pb-3">Аренда ямобура</h3>
+                        </a>
+                        <p class = "text-text-color text-justify pb-3">Аренда ямобура (гидробура, шнекового бура) в
+                                                                       Минске на базе мини-экскаватора и
+                                                                       мини-погрузчика
+                                                                       для
+                                                                       бурения отверстий глубиной до 2,5 м диаметром от
+                                                                       20 до 60 см. Отверстия диаметром 50 и 60 см
+                                                                       можно
+                                                                       пробурить глубиной до 3 м.</p>
+                        <a href = "#">
+                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                                Подробнее
+                            </button>
+                        </a>
+                    </div>
+                    
+                    <div class = "transition animate-img service-img w-full aspect-square relative">
+                        <a href = "#" class = "h-full inline-block">
+                            <img class = " h-full object-cover relative z-10 page-transition"
+                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg"
+                                 alt = "Фото мини экскаватра для аренды">
+                        </a>
+                    </div>
+                
+                </section>
+                
+                <section id = "services-hydraulic-hammer" class = "w-1/4 flex flex-col-reverse relative">
+                    <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
+                        <a href = "#">
+                            <h3 class = "uppercase text-primary-medium-color pb-3">Аренда гидромолота</h3>
+                        </a>
+                        <p class = "text-text-color text-justify pb-3">К вашим услугам аренда техники с гидромолотом.
+                                                                       Гидромолот — сменный вид навесного рабочего
+                                                                       оборудования для экскаваторов, погрузчиков и
+                                                                       прочих
+                                                                       механизмов.</p>
+                        <a href = "#">
+                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                                Подробнее
+                            </button>
+                        </a>
+                    </div>
+                    
+                    <div class = "transition animate-img service-img w-full aspect-square relative">
+                        <a href = "#" class = "h-full inline-block">
+                            <img class = " h-full object-cover relative z-10 page-transition"
+                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg"
+                                 alt = "Фото мини экскаватра для аренды">
+                        </a>
+                    </div>
+                
+                </section>
+                
+                <section id = "services-earth-work" class = "w-1/4 flex flex-col-reverse relative">
+                    <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
+                        <a href = "#">
+                            <h3 class = "uppercase text-primary-medium-color pb-3">Земляные работы</h3>
+                        </a>
+                        <p class = "text-text-color text-justify pb-3">Земляные работы – это один из важнейших этапов
+                                                                       любого строительства.</p>
+                        <a href = "#">
+                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                                Подробнее
+                            </button>
+                        </a>
+                    </div>
+                    
+                    <div class = "transition animate-img service-img w-full aspect-square relative">
+                        <a href = "#" class = "h-full inline-block">
+                            <img class = " h-full object-cover relative z-10 page-transition"
+                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg"
+                                 alt = "Фото мини экскаватра для аренды">
+                        </a>
+                    </div>
+                
+                </section>
+       
+            </div>
         
-        <section id = "services-boor">
-            <h3>Аренда ямобура</h3>
-            <p>Аренда ямобура (гидробура, шнекового бура) в Минске на базе мини-экскаватора и мини-погрузчика для
-               бурения отверстий глубиной до 2,5 м диаметром от 20 до 60 см. Отверстия диаметром 50 и 60 см можно
-               пробурить глубиной до 3 м.</p>
-        </section>
-        
-        <section id = "services-hydraulic-hammer">
-            <h3>Аренда гидромолота</h3>
-            <p>К вашим услугам аренда техники с гидромолотом.
-               Гидромолот — сменный вид навесного рабочего оборудования для экскаваторов, погрузчиков и прочих
-               механизмов.</p>
-        </section>
-        
-        <section id = "services-earth-work">
-            <h3>Земляные работы</h3>
-            <p>Земляные работы – это один из важнейших этапов любого строительства.</p>
-        </section>
+        </div>
+    
     </section>
     
     <section id = "machinery-section" class = "machinery-section">
-        <h2>Технические характеристики наших мини экскаваторов</h2>
+        <h2>Наша техника</h2>
+        <p class = "technic__description">В наличии мини-экскаваторы с различными техническими характеристиками,
+                                          позволяющими
+                                          выполнять широкий спектр земляных работ.</p>
         <section id = "machinery-et-14">
             <h3>Технические характеристики мини экскаватора Wacker Neuson ET-14</h3>
             
@@ -430,13 +527,17 @@
             </table>
         
         </section>
+    
     </section>
     
     <section id = "about-section" class = "about-section">
         <h2>О компании </h2>
+        <p>компания в цифрах</p>
         <p>
-            Наша компания действует на белорусском рынке аренды мини-техники на протяжении пяти лет. За это время у нас
-            сформировался обширный, парк техники (мини-экскаваторы, мини-погрузчики, эвакуаторы), который мы полность
+            Наша компания действует на белорусском рынке аренды мини-техники на протяжении пяти лет. За это время у
+            нас
+            сформировался обширный, парк техники (мини-экскаваторы, мини-погрузчики, эвакуаторы), который мы
+            полность
             обновили, и ежегодно пополняем только новыми единицами техники, которая всегда находится в отличном
             состоянии, сложилась собственная материально-техническая и ремонтная база, а также автопарк для доставки
             техники по г. Минску, Минской области и территории Республики Беларусь.
@@ -447,16 +548,213 @@
             работать на протяжении долгого времени. подробнее
         
         </p>
+    </section>
+    
+    
+    <section id = "benefit-section" class = "benefit-section">
+        
+        <h2 class = "skills__title">Аренда мини экскаватора у нас это выгодно и надежно</h2>
+        <p class = "skills__item-text">Мы предоставляем в аренду ямобур со шнеками различных диаметров: 200 mm, 250
+                                       mm,
+                                       300 mm, 400 mm, 500 mm, 600 mm
+        </p>
+        
+        
+        <div class = "skills-grid">
+            <div class = "skills__item__inner">
+							<span class = "skills-svg__container reward">
+								<svg class = "skills-svg" xmlns = "http://www.w3.org/2000/svg" width = "30"
+                                     height = "30"
+                                     viewBox = "0 0 1024 1024">
+									<path fill = "#fff"
+                                          d = "M115.2 841.6c6.4 9.6 19.2 12.8 28.8 12.8l124.8-19.2 64 108.8c6.4 9.6 16 16 28.8 16 0 0 0 0 3.2 0 12.8 0 22.4-6.4 28.8-19.2l112-236.8c3.2 0 3.2 0 6.4 0s3.2 0 6.4 0l112 236.8c6.4 9.6 16 19.2 28.8 19.2 0 0 0 0 3.2 0 9.6 0 22.4-6.4 28.8-16l64-108.8 124.8 19.2c12.8 3.2 22.4-3.2 28.8-12.8s9.6-22.4 3.2-32l-118.4-246.4c44.8-57.6 70.4-131.2 70.4-208 0-195.2-156.8-352-352-352s-352 153.6-352 348.8c0 80 25.6 150.4 70.4 208l-118.4 246.4c-3.2 12.8-3.2 25.6 3.2 35.2zM739.2 768c-12.8-3.2-25.6 3.2-32 16l-44.8 76.8-76.8-163.2c60.8-12.8 118.4-41.6 163.2-83.2l80 169.6-89.6-16zM512 64c160 0 288 128 288 288 0 67.2-22.4 128-64 179.2-3.2 3.2-6.4 6.4-9.6 9.6-48 54.4-115.2 89.6-192 96 0 0 0 0-3.2 0-6.4 0-16 0-22.4 0s-12.8 0-19.2 0c-3.2 0-6.4 0-6.4 0-73.6-6.4-137.6-41.6-185.6-96-3.2-6.4-6.4-12.8-12.8-16-38.4-44.8-60.8-105.6-60.8-172.8 0-160 128-288 288-288zM275.2 611.2c44.8 41.6 102.4 70.4 163.2 83.2l-76.8 163.2-44.8-76.8c-6.4-9.6-19.2-16-32-16l-86.4 12.8 76.8-166.4zM396.8 403.2l-16 92.8c-3.2 12.8 3.2 25.6 12.8 32s22.4 9.6 35.2 3.2l83.2-44.8 83.2 44.8c3.2 3.2 9.6 3.2 16 3.2s12.8-3.2 19.2-6.4c9.6-6.4 16-19.2 12.8-32l-16-92.8 67.2-67.2c9.6-9.6 12.8-22.4 9.6-32-3.2-12.8-12.8-19.2-25.6-22.4l-92.8-12.8-41.6-86.4c-6.4-9.6-16-19.2-28.8-19.2s-22.4 6.4-28.8 19.2l-41.6 83.2-92.8 12.8c-12.8 3.2-22.4 9.6-25.6 22.4s0 25.6 6.4 32l64 70.4zM467.2 329.6c9.6 0 19.2-6.4 25.6-16l19.2-41.6 19.2 41.6c3.2 9.6 12.8 16 22.4 19.2l44.8 6.4-35.2 32c-6.4 6.4-9.6 19.2-9.6 28.8l6.4 44.8-41.6-22.4c-3.2-3.2-9.6-3.2-16-3.2s-9.6 0-16 3.2l-41.6 22.4 9.6-44.8c3.2-9.6 0-22.4-9.6-28.8l-32-32 54.4-9.6z">
+									</path>
+								</svg>
+							</span>
+                <div class = "skills__inner__content">
+                    <h3 class = "skills__inner__title">12 ЛЕТ РАБОТЫ</h3>
+                    <p class = "skills__inner__content__item">У нас большая команда профессионалов с большим
+                                                              опытом
+                                                              работы</p>
+                </div>
+            </div>
+            <div class = "skills__item__inner">
+							<span class = " skills-svg__container schedule-skills">
+								<svg class = "skills-svg caslendar" xmlns = "http://www.w3.org/2000/svg"
+                                     xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px"
+                                     viewBox = "0 0 29.237 29.237"
+                                     width = "26" height = "26" style = "enable-background:new 0 0 29.237 29.237;"
+                                     xml:space = "preserve">
+									<g>
+										<g>
+											<path style = "fill:#fff;"
+                                                  d = "M7.685,24.819H8.28v-2.131h3.688v2.131h0.596v-2.131h3.862v2.131h0.597v-2.131h4.109v2.131h0.595
+											v-2.131h3.417v-0.594h-3.417v-3.861h3.417v-0.596h-3.417v-3.519h3.417v-0.594h-3.417v-2.377h-0.595v2.377h-4.109v-2.377h-0.597
+											v2.377h-3.862v-2.377h-0.596v2.377H8.279v-2.377H7.685v2.377H3.747v0.594h3.938v3.519H3.747v0.596h3.938v3.861H3.747v0.594h3.938
+											V24.819z M12.563,22.094v-3.861h3.862v3.861H12.563z M21.132,22.094h-4.109v-3.861h4.109V22.094z M21.132,14.118v3.519h-4.109
+											v-3.519C17.023,14.119,21.132,14.119,21.132,14.118z M16.426,14.118v3.519h-3.862v-3.519
+											C12.564,14.119,16.426,14.119,16.426,14.118z M8.279,14.118h3.688v3.519H8.279V14.118z M8.279,18.233h3.688v3.861H8.279V18.233z"/>
+											<path style = "fill:#fff;" d = "M29.207,2.504l-4.129,0.004L24.475,2.51v2.448c0,0.653-0.534,1.187-1.188,1.187h-1.388
+											c-0.656,0-1.188-0.533-1.188-1.187V2.514l-1.583,0.002v2.442c0,0.653-0.535,1.187-1.191,1.187h-1.388
+											c-0.655,0-1.188-0.533-1.188-1.187V2.517l-1.682,0.004v2.438c0,0.653-0.534,1.187-1.189,1.187h-1.389
+											c-0.653,0-1.188-0.533-1.188-1.187V2.525H8.181v2.434c0,0.653-0.533,1.187-1.188,1.187H5.605c-0.656,0-1.189-0.533-1.189-1.187
+											V2.53L0,2.534v26.153h2.09h25.06l2.087-0.006L29.207,2.504z M27.15,26.606H2.09V9.897h25.06V26.606z"/>
+											<path style = "fill:#fff;" d = "M5.605,5.303h1.388c0.163,0,0.296-0.133,0.296-0.297v-4.16c0-0.165-0.133-0.297-0.296-0.297H5.605
+											c-0.165,0-0.298,0.132-0.298,0.297v4.16C5.307,5.17,5.44,5.303,5.605,5.303z"/>
+											<path style = "fill:#fff;" d = "M11.101,5.303h1.389c0.164,0,0.297-0.133,0.297-0.297v-4.16c-0.001-0.165-0.134-0.297-0.298-0.297
+											H11.1c-0.163,0-0.296,0.132-0.296,0.297v4.16C10.805,5.17,10.938,5.303,11.101,5.303z"/>
+											<path style = "fill:#fff;" d = "M16.549,5.303h1.388c0.166,0,0.299-0.133,0.299-0.297v-4.16c-0.001-0.165-0.133-0.297-0.299-0.297
+											h-1.388c-0.164,0-0.297,0.132-0.297,0.297v4.16C16.252,5.17,16.385,5.303,16.549,5.303z"/>
+											<path style = "fill:#fff;" d = "M21.899,5.303h1.388c0.164,0,0.296-0.133,0.296-0.297v-4.16c0-0.165-0.132-0.297-0.296-0.297
+											h-1.388c-0.164,0-0.297,0.132-0.297,0.297v4.16C21.603,5.17,21.735,5.303,21.899,5.303z"/>
+										</g>
+									</g>
+
+								</svg>
+
+							</span>
+                <div class = "skills__inner__content">
+                    <h3 class = "skills__inner__title">РАБОТАЕМ БЕЗ ВЫХОДНЫХ И ПРАЗДНИКОВ</h3>
+                    <p class = "skills__inner__content__item">Обеспечиваем бесперебойную работу техники на
+                                                              объекте</p>
+                </div>
+            </div>
+            
+            <div class = "skills__item__inner">
+							<span class = "skills-svg__container briefcase">
+								<svg class = "skills-svg" xmlns = "http://www.w3.org/2000/svg" width = "30"
+                                     height = "30"
+                                     viewBox = "0 0 1024 1024">
+									<path fill = "#fff"
+                                          d = "M992 160h-288v-96c0-19.2-12.8-32-32-32h-320c-19.2 0-32 12.8-32 32v96h-288c-19.2 0-32 12.8-32 32v512c0 19.2 12.8 32 32 32h32v224c0 19.2 12.8 32 32 32h832c19.2 0 32-12.8 32-32v-224h32c19.2 0 32-12.8 32-32v-512c0-19.2-12.8-32-32-32zM384 96h256v64h-256v-64zM896 928h-768v-192h256v32c0 19.2 12.8 32 32 32h192c19.2 0 32-12.8 32-32v-32h256v192zM576 736h-128v-96h128v96zM960 672h-320v-64c0-19.2-12.8-32-32-32h-192c-19.2 0-32 12.8-32 32v64h-320v-448h896v448z">
+									</path>
+								</svg>
+							</span>
+                <div class = "skills__inner__content">
+                    <h3 class = "skills__inner__title">УЗКАЯ СПЕЦИАЛИЗАЦИЯ</h3>
+                    <p class = "skills__inner__content__item">Мы специализируемся на арендку ямобуров на
+                                                              мини-экскаваторах, и поэтому бурим быстро и
+                                                              качественно.</p>
+                </div>
+            </div>
+            <div class = "skills__item__inner">
+							<span class = " skills-svg__container handshake">
+								<svg class = "skills-svg" xmlns = "http://www.w3.org/2000/svg" width = "30"
+                                     height = "30"
+                                     viewBox = "0 0 1024 1024">
+									<path fill = "#fff"
+                                          d = "M112 531.2c-16 16-25.6 38.4-25.6 60.8s9.6 48 25.6 64c16 16 35.2 22.4 54.4 25.6 3.2 19.2 9.6 38.4 25.6 54.4s35.2 22.4 54.4 25.6c3.2 19.2 9.6 38.4 25.6 54.4s35.2 22.4 54.4 25.6c3.2 19.2 9.6 38.4 25.6 54.4s38.4 25.6 60.8 25.6c19.2 0 41.6-6.4 54.4-19.2l35.2 35.2c16 16 38.4 25.6 60.8 25.6s44.8-9.6 60.8-25.6c16-16 22.4-35.2 25.6-54.4 19.2-3.2 38.4-9.6 54.4-25.6s22.4-35.2 25.6-54.4c19.2-3.2 38.4-9.6 54.4-25.6s22.4-35.2 25.6-54.4c19.2-3.2 38.4-9.6 54.4-25.6 32-32 35.2-83.2 6.4-115.2 102.4-124.8 99.2-307.2-16-422.4-57.6-64-134.4-96-217.6-96-44.8 0-86.4 9.6-124.8 25.6-118.4-48-256-25.6-345.6 67.2-99.2 99.2-118.4 252.8-54.4 374.4v0zM150.4 595.2c0-6.4 3.2-12.8 6.4-16l60.8-60.8c6.4-6.4 9.6-6.4 16-6.4s12.8 3.2 16 6.4c3.2 3.2 6.4 9.6 6.4 16s-3.2 12.8-6.4 16l-57.6 60.8c-9.6 9.6-25.6 9.6-35.2 0-3.2-3.2-6.4-9.6-6.4-16zM236.8 656l60.8-60.8c3.2-3.2 9.6-6.4 16-6.4s12.8 3.2 16 6.4c9.6 9.6 9.6 25.6 0 35.2l-60.8 60.8c-9.6 9.6-25.6 9.6-35.2 0-6.4-9.6-6.4-25.6 3.2-35.2zM310.4 752c0-6.4 3.2-12.8 6.4-16l60.8-60.8c3.2-3.2 9.6-6.4 16-6.4s12.8 3.2 16 6.4c3.2 3.2 6.4 9.6 6.4 16s-3.2 12.8-6.4 16l-57.6 64c-9.6 9.6-25.6 9.6-35.2 0-3.2-6.4-6.4-12.8-6.4-19.2zM396.8 848c-3.2-3.2-6.4-9.6-6.4-16s3.2-12.8 6.4-16l60.8-60.8c3.2-3.2 9.6-6.4 16-6.4s12.8 3.2 16 6.4c9.6 9.6 9.6 25.6 0 35.2l-41.6 41.6c0 0 0 0 0 0s0 0 0 0l-16 16c-9.6 9.6-25.6 9.6-35.2 0zM582.4 889.6c-9.6 9.6-25.6 9.6-35.2 0l-35.2-35.2 19.2-19.2c3.2-3.2 9.6-9.6 12.8-16l35.2 35.2c3.2 3.2 6.4 9.6 6.4 16 3.2 6.4 3.2 12.8-3.2 19.2zM812.8 201.6c86.4 86.4 92.8 230.4 16 329.6l-134.4-140.8c12.8-6.4 28.8-16 38.4-28.8 12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0c-80 80-236.8-6.4-236.8-6.4-12.8-6.4-28.8-3.2-38.4 6.4-44.8 44.8-86.4 51.2-118.4 48l163.2-163.2c51.2-48 112-73.6 179.2-73.6s128 25.6 176 73.6zM211.2 201.6c60.8-60.8 144-83.2 227.2-67.2-6.4 6.4-16 12.8-22.4 22.4l-198.4 198.4c-6.4 6.4-9.6 16-9.6 25.6s6.4 19.2 12.8 22.4c38.4 25.6 131.2 48 220.8-28.8 35.2 16 112 44.8 185.6 35.2l195.2 204.8c9.6 9.6 9.6 25.6 0 35.2s-25.6 9.6-35.2 0c0 0 0 0 0 0l-70.4-70.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l70.4 70.4c3.2 3.2 6.4 9.6 6.4 16s-3.2 12.8-6.4 16c-9.6 9.6-25.6 9.6-35.2 0 0 0 0 0 0 0s0 0 0 0l-70.4-70.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l70.4 70.4c9.6 9.6 9.6 25.6 0 35.2s-25.6 9.6-35.2 0l-76.8-76.8c-3.2-6.4-9.6-16-16-22.4-16-16-35.2-22.4-54.4-25.6-3.2-19.2-9.6-41.6-25.6-54.4-16-16-35.2-22.4-54.4-25.6-3.2-19.2-9.6-38.4-25.6-54.4s-35.2-22.4-54.4-25.6c-3.2-19.2-9.6-41.6-25.6-54.4-32-32-92.8-32-124.8 0l-9.6 9.6c-41.6-86.4-22.4-201.6 51.2-275.2z">
+									</path>
+								</svg>
+							</span>
+                <div class = "skills__inner__content">
+                    <h3 class = "skills__inner__title">ХОРОШАЯ РЕПУТАЦИЯ</h3>
+                    <p class = "skills__inner__content__item">Большая часть клиентов возвращается к нам и также,
+                                                              рекомендует нас другим</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    <section id = "review-section" class = "review-section">
+        <h2>Отзывы клиентов</h2>
+        
+        
+        <div class = "reviews__container">
+            <div class = "review-top__container ">
+                <div class = "review-top__content">
+                    <a target = "_blank"
+                       href = "https://www.google.com/search?sxsrf=ALiCzsaguRwNcxHy3qzy_2YFl1Wgc12Hog%3A1654264566906&q=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%BC%D0%B8%D0%BD%D0%B8-%D1%8D%D0%BA%D1%81%D0%BA%D0%B0%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0%2C%20%D0%BC%D0%B8%D0%BD%D0%B8-%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA%D0%B0%20%7C%20%D0%AF%D0%BC%D0%BE%D0%B1%D1%83%D1%80%20(%D0%B1%D1%83%D1%80)%20%7C%20%D0%93%D0%B8%D0%B4%D1%80%D0%BE%D0%BC%D0%BE%D0%BB%D0%BE%D1%82%20%7C%20%D0%91%D1%83%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B2%D0%B0%D0%B9&stick=H4sIAAAAAAAAAEWNSwrCQBBEcaF4jEEQFBTyj_E2DiFnyMJFTBZZCYqewAs4aoJj1PEK1TeyExeuuql61BsORmMr9YJYxtJxw2Bh-X4kl1YqfSdx7dBLgkTaqyg89Y897ChDjTcqKIEXNL96Tls0tEEDhSsU5TBMqdkfwAcGN8qowJ1KDhkVa4EzEwYXKigTk9-dtvmBkYo3TNc_eS9v430LdHqNWrCRbXh8AXfv7w3BAAAA&ved=2ahUKEwimyv_et5H4AhXlkYsKHWlCAC0QrMcEegQIAhAH#lrd=0x46dbdb237680559b:0xb52f3174f6fb1a97,1,,,">
+                        <span class = "revie-text all-revie-item">5.0</span>
+                        <span class = "star all-revie-item"> </span>
+                        <span class = "star all-revie-item"> </span>
+                        <span class = "star all-revie-item"> </span>
+                        <span class = "star all-revie-item"> </span>
+                        <span class = "star all-revie-item"> </span>
+                        <span class = "revie-text all-revie-item">14 отзывов на Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class = "all-reviews__container">
+                <div class = "review-swiper swiper">
+                    <div class = "review-swiper-wrapper swiper-wrapper">
+                    </div>
+                    <div class = "swiper-pagination">
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                        <span class = "swiper-pagination-bullet"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     
     </section>
     
+    
+    <section class = "contacts" id = "contacts">
+        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <div class = "wrapper contacts-wrapper">
+            <div class = "contacts-column">
+                
+                <h6 class = "ip">Индивидуальный предприниматель</h6>
+                <p class = "contacts__item surname">Данилович Александр Иванович</p>
+                <p class = "contacts__item">Республика Беларусь</p>
+                <p class = "contacts__item">Минская облась, Минский район</p>
+                <p class = "contacts__item">д. Ярково д. 20</p>
+                <p class = "contacts__item">УНП 390053113</p>
+                <h6>Наши контактные телефоны</h6>
+                <p class = "contacts__item"><a class = "tel" href = "tel:+375296949698">+375 29
+                                                                                        694-96-98</a></p>
+                <p class = "contacts__item"><a class = "tel" href = "tel:+375336949698">+375 33
+                                                                                        694-96-98</a></p>
+                <p class = "contacts__item miniarenda">miniarenda@mail.ru</p>
+            </div>
+            <div class = "contacts-column">
+                <form name = "contact__form" class = "contact__form">
+                    <h4 class = "column-title">ОТПРАВИТЬ СООБЩЕНИЕ</h4>
+                    <p class = "contacts__item">Если у Вас остались вопросы, на которые Вы не нашли ответа -
+                                                напишите
+                                                нам.
+                        <br>
+                                                За этой формой не обычный консультант, а настоящая человеческая
+                                                поддержка, так что задавайте любые
+                                                вопросы - мы обязательно поможем.
+                    </p>
+                    <label for = "names">Ваше имя *</label>
+                    <input type = "text" name = "names" id = "client-name" placeholder = "Меня зовут">
+                    <label for = "tel">Ваш контактный телефон *</label>
+                    <input type = "tel" name = "tel" id = "client-tel"
+                           placeholder = "Со мной можно связаться под номеру телефона">
+                    <label for = "e-mail">Ваш e-mail *</label>
+                    <input type = "email" name = "e-mail" id = "client-email"
+                           placeholder = "Со мной можно связаться под электронной почте">
+                    <label for = "message">Ваше сообщение *</label>
+                    <textarea name = "message" id = "client-message" cols = "30" rows = "6"
+                              placeholder = "У меня вопрос"></textarea>
+                    <button type = "submit" class = "button button-colored form__button">Отправить</button>
+                </form>
+            
+            </div>
+        </div>
+    </section>
 
 
 </main>
 
-
-<!--<main>-->
 
 <!--    <section class = "title separator">-->
 <!--        <h1>АРЕНДА ЯМОБУРА</h1>-->
@@ -470,6 +768,8 @@
 <!--            <button class = "separators__button button-colored button">Заказать ямобур</button>-->
 <!--        </a>-->
 <!--    </section>-->
+
+
 <!--    <section class = "servises" id = "servises">-->
 <!--        <div class = "wrapper">-->
 <!--            <div class = "servises__content">-->
@@ -539,129 +839,8 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
-<!--    <section class = "skills">-->
-<!--        <div class = "wrapper">-->
-<!--            <div class = "skills__content">-->
-<!--                <h2 class = "skills__title">Аренда ямобура&nbsp;у&nbsp;нас это выгодно и надежно</h2>-->
-<!--                <div class = "skills__item-text">Мы предоставляем в аренду ямобур со шнеками различных диаметров: <b>-->
-<!--                    200 mm, 250 mm, 300 mm, 400 mm, 500 mm, 600 mm</b>-->
-<!--                </div>-->
-<!--                <div class = "skills-grid">-->
-<!--                    <div class = "skills__item__inner">-->
-<!--							<span class = "skills-svg__container reward">-->
-<!--								<svg class = "skills-svg" xmlns = "http://www.w3.org/2000/svg" width = "30"-->
-<!--                                     height = "30"-->
-<!--                                     viewBox = "0 0 1024 1024">-->
-<!--									<path fill = "#fff"-->
-<!--                                          d = "M115.2 841.6c6.4 9.6 19.2 12.8 28.8 12.8l124.8-19.2 64 108.8c6.4 9.6 16 16 28.8 16 0 0 0 0 3.2 0 12.8 0 22.4-6.4 28.8-19.2l112-236.8c3.2 0 3.2 0 6.4 0s3.2 0 6.4 0l112 236.8c6.4 9.6 16 19.2 28.8 19.2 0 0 0 0 3.2 0 9.6 0 22.4-6.4 28.8-16l64-108.8 124.8 19.2c12.8 3.2 22.4-3.2 28.8-12.8s9.6-22.4 3.2-32l-118.4-246.4c44.8-57.6 70.4-131.2 70.4-208 0-195.2-156.8-352-352-352s-352 153.6-352 348.8c0 80 25.6 150.4 70.4 208l-118.4 246.4c-3.2 12.8-3.2 25.6 3.2 35.2zM739.2 768c-12.8-3.2-25.6 3.2-32 16l-44.8 76.8-76.8-163.2c60.8-12.8 118.4-41.6 163.2-83.2l80 169.6-89.6-16zM512 64c160 0 288 128 288 288 0 67.2-22.4 128-64 179.2-3.2 3.2-6.4 6.4-9.6 9.6-48 54.4-115.2 89.6-192 96 0 0 0 0-3.2 0-6.4 0-16 0-22.4 0s-12.8 0-19.2 0c-3.2 0-6.4 0-6.4 0-73.6-6.4-137.6-41.6-185.6-96-3.2-6.4-6.4-12.8-12.8-16-38.4-44.8-60.8-105.6-60.8-172.8 0-160 128-288 288-288zM275.2 611.2c44.8 41.6 102.4 70.4 163.2 83.2l-76.8 163.2-44.8-76.8c-6.4-9.6-19.2-16-32-16l-86.4 12.8 76.8-166.4zM396.8 403.2l-16 92.8c-3.2 12.8 3.2 25.6 12.8 32s22.4 9.6 35.2 3.2l83.2-44.8 83.2 44.8c3.2 3.2 9.6 3.2 16 3.2s12.8-3.2 19.2-6.4c9.6-6.4 16-19.2 12.8-32l-16-92.8 67.2-67.2c9.6-9.6 12.8-22.4 9.6-32-3.2-12.8-12.8-19.2-25.6-22.4l-92.8-12.8-41.6-86.4c-6.4-9.6-16-19.2-28.8-19.2s-22.4 6.4-28.8 19.2l-41.6 83.2-92.8 12.8c-12.8 3.2-22.4 9.6-25.6 22.4s0 25.6 6.4 32l64 70.4zM467.2 329.6c9.6 0 19.2-6.4 25.6-16l19.2-41.6 19.2 41.6c3.2 9.6 12.8 16 22.4 19.2l44.8 6.4-35.2 32c-6.4 6.4-9.6 19.2-9.6 28.8l6.4 44.8-41.6-22.4c-3.2-3.2-9.6-3.2-16-3.2s-9.6 0-16 3.2l-41.6 22.4 9.6-44.8c3.2-9.6 0-22.4-9.6-28.8l-32-32 54.4-9.6z">-->
-<!--									</path>-->
-<!--								</svg>-->
-<!--							</span>-->
-<!--                        <div class = "skills__inner__content">-->
-<!--                            <h3 class = "skills__inner__title">12 ЛЕТ РАБОТЫ</h3>-->
-<!--                            <p class = "skills__inner__content__item">У нас большая команда профессионалов с большим-->
-<!--                                                                      опытом-->
-<!--                                                                      работы</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class = "skills__item__inner">-->
-<!--							<span class = " skills-svg__container schedule-skills">-->
-<!--								<svg class = "skills-svg caslendar" xmlns = "http://www.w3.org/2000/svg"-->
-<!--                                     xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px"-->
-<!--                                     viewBox = "0 0 29.237 29.237"-->
-<!--                                     width = "26" height = "26" style = "enable-background:new 0 0 29.237 29.237;"-->
-<!--                                     xml:space = "preserve">-->
-<!--									<g>-->
-<!--										<g>-->
-<!--											<path style = "fill:#fff;"-->
-<!--                                                  d = "M7.685,24.819H8.28v-2.131h3.688v2.131h0.596v-2.131h3.862v2.131h0.597v-2.131h4.109v2.131h0.595-->
-<!--											v-2.131h3.417v-0.594h-3.417v-3.861h3.417v-0.596h-3.417v-3.519h3.417v-0.594h-3.417v-2.377h-0.595v2.377h-4.109v-2.377h-0.597-->
-<!--											v2.377h-3.862v-2.377h-0.596v2.377H8.279v-2.377H7.685v2.377H3.747v0.594h3.938v3.519H3.747v0.596h3.938v3.861H3.747v0.594h3.938-->
-<!--											V24.819z M12.563,22.094v-3.861h3.862v3.861H12.563z M21.132,22.094h-4.109v-3.861h4.109V22.094z M21.132,14.118v3.519h-4.109-->
-<!--											v-3.519C17.023,14.119,21.132,14.119,21.132,14.118z M16.426,14.118v3.519h-3.862v-3.519-->
-<!--											C12.564,14.119,16.426,14.119,16.426,14.118z M8.279,14.118h3.688v3.519H8.279V14.118z M8.279,18.233h3.688v3.861H8.279V18.233z"/>-->
-<!--											<path style = "fill:#fff;" d = "M29.207,2.504l-4.129,0.004L24.475,2.51v2.448c0,0.653-0.534,1.187-1.188,1.187h-1.388-->
-<!--											c-0.656,0-1.188-0.533-1.188-1.187V2.514l-1.583,0.002v2.442c0,0.653-0.535,1.187-1.191,1.187h-1.388-->
-<!--											c-0.655,0-1.188-0.533-1.188-1.187V2.517l-1.682,0.004v2.438c0,0.653-0.534,1.187-1.189,1.187h-1.389-->
-<!--											c-0.653,0-1.188-0.533-1.188-1.187V2.525H8.181v2.434c0,0.653-0.533,1.187-1.188,1.187H5.605c-0.656,0-1.189-0.533-1.189-1.187-->
-<!--											V2.53L0,2.534v26.153h2.09h25.06l2.087-0.006L29.207,2.504z M27.15,26.606H2.09V9.897h25.06V26.606z"/>-->
-<!--											<path style = "fill:#fff;" d = "M5.605,5.303h1.388c0.163,0,0.296-0.133,0.296-0.297v-4.16c0-0.165-0.133-0.297-0.296-0.297H5.605-->
-<!--											c-0.165,0-0.298,0.132-0.298,0.297v4.16C5.307,5.17,5.44,5.303,5.605,5.303z"/>-->
-<!--											<path style = "fill:#fff;" d = "M11.101,5.303h1.389c0.164,0,0.297-0.133,0.297-0.297v-4.16c-0.001-0.165-0.134-0.297-0.298-0.297-->
-<!--											H11.1c-0.163,0-0.296,0.132-0.296,0.297v4.16C10.805,5.17,10.938,5.303,11.101,5.303z"/>-->
-<!--											<path style = "fill:#fff;" d = "M16.549,5.303h1.388c0.166,0,0.299-0.133,0.299-0.297v-4.16c-0.001-0.165-0.133-0.297-0.299-0.297-->
-<!--											h-1.388c-0.164,0-0.297,0.132-0.297,0.297v4.16C16.252,5.17,16.385,5.303,16.549,5.303z"/>-->
-<!--											<path style = "fill:#fff;" d = "M21.899,5.303h1.388c0.164,0,0.296-0.133,0.296-0.297v-4.16c0-0.165-0.132-0.297-0.296-0.297-->
-<!--											h-1.388c-0.164,0-0.297,0.132-0.297,0.297v4.16C21.603,5.17,21.735,5.303,21.899,5.303z"/>-->
-<!--										</g>-->
-<!--									</g>-->
 
-<!--								</svg>-->
 
-<!--							</span>-->
-<!--                        <div class = "skills__inner__content">-->
-<!--                            <h3 class = "skills__inner__title">РАБОТАЕМ БЕЗ ВЫХОДНЫХ И ПРАЗДНИКОВ</h3>-->
-<!--                            <p class = "skills__inner__content__item">Обеспечиваем бесперебойную работу техники на-->
-<!--                                                                      объекте</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    -->
-<!--                    <div class = "skills__item__inner">-->
-<!--							<span class = "skills-svg__container briefcase">-->
-<!--								<svg class = "skills-svg" xmlns = "http://www.w3.org/2000/svg" width = "30"-->
-<!--                                     height = "30"-->
-<!--                                     viewBox = "0 0 1024 1024">-->
-<!--									<path fill = "#fff"-->
-<!--                                          d = "M992 160h-288v-96c0-19.2-12.8-32-32-32h-320c-19.2 0-32 12.8-32 32v96h-288c-19.2 0-32 12.8-32 32v512c0 19.2 12.8 32 32 32h32v224c0 19.2 12.8 32 32 32h832c19.2 0 32-12.8 32-32v-224h32c19.2 0 32-12.8 32-32v-512c0-19.2-12.8-32-32-32zM384 96h256v64h-256v-64zM896 928h-768v-192h256v32c0 19.2 12.8 32 32 32h192c19.2 0 32-12.8 32-32v-32h256v192zM576 736h-128v-96h128v96zM960 672h-320v-64c0-19.2-12.8-32-32-32h-192c-19.2 0-32 12.8-32 32v64h-320v-448h896v448z">-->
-<!--									</path>-->
-<!--								</svg>-->
-<!--							</span>-->
-<!--                        <div class = "skills__inner__content">-->
-<!--                            <h3 class = "skills__inner__title">УЗКАЯ СПЕЦИАЛИЗАЦИЯ</h3>-->
-<!--                            <p class = "skills__inner__content__item">Мы специализируемся на арендку ямобуров на-->
-<!--                                                                      мини-экскаваторах, и поэтому бурим быстро и-->
-<!--                                                                      качественно.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class = "skills__item__inner">-->
-<!--							<span class = " skills-svg__container handshake">-->
-<!--								<svg class = "skills-svg" xmlns = "http://www.w3.org/2000/svg" width = "30"-->
-<!--                                     height = "30"-->
-<!--                                     viewBox = "0 0 1024 1024">-->
-<!--									<path fill = "#fff"-->
-<!--                                          d = "M112 531.2c-16 16-25.6 38.4-25.6 60.8s9.6 48 25.6 64c16 16 35.2 22.4 54.4 25.6 3.2 19.2 9.6 38.4 25.6 54.4s35.2 22.4 54.4 25.6c3.2 19.2 9.6 38.4 25.6 54.4s35.2 22.4 54.4 25.6c3.2 19.2 9.6 38.4 25.6 54.4s38.4 25.6 60.8 25.6c19.2 0 41.6-6.4 54.4-19.2l35.2 35.2c16 16 38.4 25.6 60.8 25.6s44.8-9.6 60.8-25.6c16-16 22.4-35.2 25.6-54.4 19.2-3.2 38.4-9.6 54.4-25.6s22.4-35.2 25.6-54.4c19.2-3.2 38.4-9.6 54.4-25.6s22.4-35.2 25.6-54.4c19.2-3.2 38.4-9.6 54.4-25.6 32-32 35.2-83.2 6.4-115.2 102.4-124.8 99.2-307.2-16-422.4-57.6-64-134.4-96-217.6-96-44.8 0-86.4 9.6-124.8 25.6-118.4-48-256-25.6-345.6 67.2-99.2 99.2-118.4 252.8-54.4 374.4v0zM150.4 595.2c0-6.4 3.2-12.8 6.4-16l60.8-60.8c6.4-6.4 9.6-6.4 16-6.4s12.8 3.2 16 6.4c3.2 3.2 6.4 9.6 6.4 16s-3.2 12.8-6.4 16l-57.6 60.8c-9.6 9.6-25.6 9.6-35.2 0-3.2-3.2-6.4-9.6-6.4-16zM236.8 656l60.8-60.8c3.2-3.2 9.6-6.4 16-6.4s12.8 3.2 16 6.4c9.6 9.6 9.6 25.6 0 35.2l-60.8 60.8c-9.6 9.6-25.6 9.6-35.2 0-6.4-9.6-6.4-25.6 3.2-35.2zM310.4 752c0-6.4 3.2-12.8 6.4-16l60.8-60.8c3.2-3.2 9.6-6.4 16-6.4s12.8 3.2 16 6.4c3.2 3.2 6.4 9.6 6.4 16s-3.2 12.8-6.4 16l-57.6 64c-9.6 9.6-25.6 9.6-35.2 0-3.2-6.4-6.4-12.8-6.4-19.2zM396.8 848c-3.2-3.2-6.4-9.6-6.4-16s3.2-12.8 6.4-16l60.8-60.8c3.2-3.2 9.6-6.4 16-6.4s12.8 3.2 16 6.4c9.6 9.6 9.6 25.6 0 35.2l-41.6 41.6c0 0 0 0 0 0s0 0 0 0l-16 16c-9.6 9.6-25.6 9.6-35.2 0zM582.4 889.6c-9.6 9.6-25.6 9.6-35.2 0l-35.2-35.2 19.2-19.2c3.2-3.2 9.6-9.6 12.8-16l35.2 35.2c3.2 3.2 6.4 9.6 6.4 16 3.2 6.4 3.2 12.8-3.2 19.2zM812.8 201.6c86.4 86.4 92.8 230.4 16 329.6l-134.4-140.8c12.8-6.4 28.8-16 38.4-28.8 12.8-12.8 12.8-32 0-44.8s-32-12.8-44.8 0c-80 80-236.8-6.4-236.8-6.4-12.8-6.4-28.8-3.2-38.4 6.4-44.8 44.8-86.4 51.2-118.4 48l163.2-163.2c51.2-48 112-73.6 179.2-73.6s128 25.6 176 73.6zM211.2 201.6c60.8-60.8 144-83.2 227.2-67.2-6.4 6.4-16 12.8-22.4 22.4l-198.4 198.4c-6.4 6.4-9.6 16-9.6 25.6s6.4 19.2 12.8 22.4c38.4 25.6 131.2 48 220.8-28.8 35.2 16 112 44.8 185.6 35.2l195.2 204.8c9.6 9.6 9.6 25.6 0 35.2s-25.6 9.6-35.2 0c0 0 0 0 0 0l-70.4-70.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l70.4 70.4c3.2 3.2 6.4 9.6 6.4 16s-3.2 12.8-6.4 16c-9.6 9.6-25.6 9.6-35.2 0 0 0 0 0 0 0s0 0 0 0l-70.4-70.4c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l70.4 70.4c9.6 9.6 9.6 25.6 0 35.2s-25.6 9.6-35.2 0l-76.8-76.8c-3.2-6.4-9.6-16-16-22.4-16-16-35.2-22.4-54.4-25.6-3.2-19.2-9.6-41.6-25.6-54.4-16-16-35.2-22.4-54.4-25.6-3.2-19.2-9.6-38.4-25.6-54.4s-35.2-22.4-54.4-25.6c-3.2-19.2-9.6-41.6-25.6-54.4-32-32-92.8-32-124.8 0l-9.6 9.6c-41.6-86.4-22.4-201.6 51.2-275.2z">-->
-<!--									</path>-->
-<!--								</svg>-->
-<!--							</span>-->
-<!--                        <div class = "skills__inner__content">-->
-<!--                            <h3 class = "skills__inner__title">ХОРОШАЯ РЕПУТАЦИЯ</h3>-->
-<!--                            <p class = "skills__inner__content__item">Большая часть клиентов возвращается к нам и также,-->
-<!--                                                                      рекомендует нас другим</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--    </section>-->
-<!--    <section class = "technic" id = "technic">-->
-<!--        <div class = "wrapper">-->
-<!--            <div class = "technic__content">-->
-<!--                <h2 class = "technic__title">НАША ТЕХНИКА</h2>-->
-<!--                <p class = "technic__description">В наличии мини-экскаваторы с различными техническими характеристиками,-->
-<!--                                                  позволяющими-->
-<!--                                                  выполнять широкий спектр земляных работ.</p>-->
-<!--                <div class = "technic__item">-->
-<!--                    <div class = "technic-image__container" id = "et1404">-->
-<!--                        <img class = "technic-img" src = "asetss/images/technics/738/_DSC2652-738w.jpg"-->
-<!--                             alt = "ямобур">-->
-<!--
-<!--                        <a href = "tel:+375296949698">-->
-<!--                            <button class = "technic__button button-colored button">Заказать</button>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 <!--    <section class = "portfolio" id = "portfolio">-->
 <!--        <div class = "wrapper">-->
 <!--            <h2 class = "portfolio__title">НАШИ РАБОТЫ</h2>-->
@@ -990,6 +1169,8 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
+
+
 <!--    <section class = "price" id = "price">-->
 <!--        <div class = "wrapper">-->
 <!--            <div class = "price__container">-->
@@ -1060,48 +1241,8 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
-<!--    <section class = "reviews" id = "reviews">-->
-<!--        <div class = "wrapper">-->
-<!--            <div class = "reviews__container">-->
-<!--                <div class = "review-top__container ">-->
-<!--                    <div class = "review-top__content">-->
-<!--                        <a target = "_blank"-->
-<!--                           href = "https://www.google.com/search?sxsrf=ALiCzsaguRwNcxHy3qzy_2YFl1Wgc12Hog%3A1654264566906&q=%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D0%BC%D0%B8%D0%BD%D0%B8-%D1%8D%D0%BA%D1%81%D0%BA%D0%B0%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0%2C%20%D0%BC%D0%B8%D0%BD%D0%B8-%D0%BF%D0%BE%D0%B3%D1%80%D1%83%D0%B7%D1%87%D0%B8%D0%BA%D0%B0%20%7C%20%D0%AF%D0%BC%D0%BE%D0%B1%D1%83%D1%80%20(%D0%B1%D1%83%D1%80)%20%7C%20%D0%93%D0%B8%D0%B4%D1%80%D0%BE%D0%BC%D0%BE%D0%BB%D0%BE%D1%82%20%7C%20%D0%91%D1%83%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B2%D0%B0%D0%B9&stick=H4sIAAAAAAAAAEWNSwrCQBBEcaF4jEEQFBTyj_E2DiFnyMJFTBZZCYqewAs4aoJj1PEK1TeyExeuuql61BsORmMr9YJYxtJxw2Bh-X4kl1YqfSdx7dBLgkTaqyg89Y897ChDjTcqKIEXNL96Tls0tEEDhSsU5TBMqdkfwAcGN8qowJ1KDhkVa4EzEwYXKigTk9-dtvmBkYo3TNc_eS9v430LdHqNWrCRbXh8AXfv7w3BAAAA&ved=2ahUKEwimyv_et5H4AhXlkYsKHWlCAC0QrMcEegQIAhAH#lrd=0x46dbdb237680559b:0xb52f3174f6fb1a97,1,,,">-->
-<!--                            <span class = "revie-text all-revie-item">5.0</span>-->
-<!--                            <span class = "star all-revie-item"> </span>-->
-<!--                            <span class = "star all-revie-item"> </span>-->
-<!--                            <span class = "star all-revie-item"> </span>-->
-<!--                            <span class = "star all-revie-item"> </span>-->
-<!--                            <span class = "star all-revie-item"> </span>-->
-<!--                            <span class = "revie-text all-revie-item">14 отзывов на Google</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class = "all-reviews__container">-->
-<!--                    <div class = "review-swiper swiper">-->
-<!--                        <div class = "review-swiper-wrapper swiper-wrapper">-->
-<!--                        </div>-->
-<!--                        <div class = "swiper-pagination">-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                            <span class = "swiper-pagination-bullet"></span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+
+
 <!--    -->
 <!--    -->
 <!--    <section class = "calculate hidden" id = "calculate">-->
@@ -1159,6 +1300,8 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
+
+
 <!--    <section class = "separator-big-image">-->
 <!--        <div class = "separator-image__container">-->
 <!--            <img class = "separator-big-image__elem" src = "asetss/images/separate-big-image/separate-image-1.jpg"-->
@@ -1173,50 +1316,8 @@
 <!--                 alt = "ямобур" width = "300">-->
 <!--        </div>-->
 <!--    </section>-->
-<!--    <section class = "contacts" id = "contacts">-->
-<!--        <div class = "wrapper contacts-wrapper">-->
-<!--            <div class = "contacts-column">-->
-<!--                <h4 class = "column-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>-->
-<!--                <h6 class = "ip">Индивидуальный предприниматель</h6>-->
-<!--                <p class = "contacts__item surname">Данилович Александр Иванович</p>-->
-<!--                <p class = "contacts__item">Республика Беларусь</p>-->
-<!--                <p class = "contacts__item">Минская облась, Минский район</p>-->
-<!--                <p class = "contacts__item">д. Ярково д. 20</p>-->
-<!--                <p class = "contacts__item">УНП 390053113</p>-->
-<!--                <h6>Наши контактные телефоны</h6>-->
-<!--                <p class = "contacts__item"><a class = "tel" href = "tel:+375296949698">+375 29-->
-<!--                                                                                        694-96-98</a></p>-->
-<!--                <p class = "contacts__item"><a class = "tel" href = "tel:+375336949698">+375 33-->
-<!--                                                                                        694-96-98</a></p>-->
-<!--                <p class = "contacts__item miniarenda">miniarenda@mail.ru</p>-->
-<!--            </div>-->
-<!--            <div class = "contacts-column">-->
-<!--                <form name = "contact__form" class = "contact__form">-->
-<!--                    <h4 class = "column-title">ОТПРАВИТЬ СООБЩЕНИЕ</h4>-->
-<!--                    <p class = "contacts__item">Если у Вас остались вопросы, на которые Вы не нашли ответа - напишите-->
-<!--                                                нам.-->
-<!--                        <br>-->
-<!--                                                За этой формой не обычный консультант, а настоящая человеческая-->
-<!--                                                поддержка, так что задавайте любые-->
-<!--                                                вопросы - мы обязательно поможем.-->
-<!--                    </p>-->
-<!--                    <label for = "names">Ваше имя *</label>-->
-<!--                    <input type = "text" name = "names" id = "client-name" placeholder = "Меня зовут">-->
-<!--                    <label for = "tel">Ваш контактный телефон *</label>-->
-<!--                    <input type = "tel" name = "tel" id = "client-tel"-->
-<!--                           placeholder = "Со мной можно связаться под номеру телефона">-->
-<!--                    <label for = "e-mail">Ваш e-mail *</label>-->
-<!--                    <input type = "email" name = "e-mail" id = "client-email"-->
-<!--                           placeholder = "Со мной можно связаться под электронной почте">-->
-<!--                    <label for = "message">Ваше сообщение *</label>-->
-<!--                    <textarea name = "message" id = "client-message" cols = "30" rows = "6"-->
-<!--                              placeholder = "У меня вопрос"></textarea>-->
-<!--                    <button type = "submit" class = "button button-colored form__button">Отправить</button>-->
-<!--                </form>-->
-<!--            -->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+
+
 <!--    <section class = "separator-smoll-image">-->
 <!--        <img class = "separator-smoll-image__elem" src = "asetss/images/separate-smoll-image/_DSC1440.jpg" alt = "">-->
 <!--        <img class = "separator-smoll-image__elem" src = "asetss/images/separate-smoll-image/_DSC1563.jpg" alt = "">-->
@@ -1229,7 +1330,8 @@
 <!--        <img class = "separator-smoll-image__elem" src = "asetss/images/separate-smoll-image/_DSC1440.jpg" alt = "">-->
 <!--        <img class = "separator-smoll-image__elem" src = "asetss/images/separate-smoll-image/_DSC1563.jpg" alt = "">-->
 <!--    </section>-->
-<!--</main>-->
+
+
 <!--<footer>-->
 <!--    <div class = "wrapper">-->
 <!--        <div class = "footer-top footer__item">-->
@@ -1294,38 +1396,41 @@
 <!--    </div>-->
 
 <!--</footer>-->
+
 <!--<a class = "arrow-up-link " href = "#logo">-->
 <!--    <div class = "arrow-up__container hidden">-->
 <!--        <span class = "arrow-up"></span>-->
 <!--    </div>-->
 <!--</a>-->
-<!--<section class = "callback-form-section hidden">-->
-<!--    <div class = "overlay">-->
-<!--        <div class = "callback-form__container">-->
-<!--            <form id = "callback" class = "callback-form">-->
-<!--                <label for = "callback" class = "modal-label">Заказ обратного звонка</label>-->
-<!--                <input type = "tel" class = "modal-tel _req" name = "phone" id = "modal-client-tel"-->
-<!--                       placeholder = "Номер телефона с кодом" pattern = "[0-9]" required>-->
-<!--                <textarea class = "modal-message _req" name = "message" id = "modal-client-message" cols = "30"-->
-<!--                          rows = "3"-->
-<!--                          placeholder = "Вид и место проведения работ" required></textarea>-->
-<!--                <button type = "submit" class = "button button-colored modal__button">Отправить</button>-->
-<!--            </form>-->
-<!--            <div class = "close-button"></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!--<script src = "https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+
+<section class = "callback-form-section hidden">
+    <h2>Форма обратной связи</h2>
+    <div class = "overlay">
+        <div class = "callback-form__container">
+            <form id = "callback" class = "callback-form">
+                <label for = "callback" class = "modal-label">Заказ обратного звонка</label>
+                <input type = "tel" class = "modal-tel _req" name = "phone" id = "modal-client-tel"
+                       placeholder = "Номер телефона с кодом" pattern = "[0-9]" required>
+                <textarea class = "modal-message _req" name = "message" id = "modal-client-message" cols = "30"
+                          rows = "3"
+                          placeholder = "Вид и место проведения работ" required></textarea>
+                <button type = "submit" class = "button button-colored modal__button">Отправить</button>
+            </form>
+            <div class = "close-button"></div>
+        </div>
+    </div>
+</section>
+
+
 <script src = "js/script.js" type = "module"></script>
 <!--<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 <!--<script src = "js/form.js"></script>-->
 <!--<script src = "./js/form_mail.js"></script>-->
-<!--<script src = "js/sweetalert.min.js"></script>-->
 
 
 <script src = "swiper/swiper-bundle.min.js"></script>
 <!--<script src = "swiper/swiper.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+
 </body>
 
 </html>
