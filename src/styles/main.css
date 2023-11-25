@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "base/fonts.css";
+@import "base/base.css";
+@import "layers/servises.css";
+@import "elements/button.css";
+@import "elements/link.css";
+@import "elements/animation.css";
+@import "layers/header.css";
+@import "components/callback_form.css";
+@import "components/navigation.css";
+@import "components/hamburger.css";
+@import "components/slider.css";
+@import "layers/mainSlider.css";
+@import "layers/action.css";
+@import "layers/technic.css";
+@import "layers/portfolio.css";
+@import "components/user_reviews.css";
+@import "components/price.css";
+@import "layers/contacts.css";
+@import "layers/footer.css";
+
+@layer base{
+    :root{
+        /* For rgba(255, 115, 179, <alpha-value>) */
+        --primary-dark-color:#123462;
+        --primary-main-color:#1d60aa;
+        --primary-medium-color:#4ba1ed;
+        --primary-light-color:#aae0fa;
+        --light-background-color:#f5f9fc;
+        --text-color:#828282;
+        /* 'g': #696969; */
+        /* '8': #828282; */
+        /* '6': #bcbcbc; */
+        /* 'h': #ccc; */
+        --shadow-color:#ddd;
+        /* '7': #eee; */
+        /* 'f': #f5f5f5; */
+        --primary-white-color:#d1d1d1;
+        --pseudoElementsWidth:2vw;
+        --doublePseudoElementsWidth:calc(var(--pseudoElementsWidth) * 2);
+    }
+}
+
+
+

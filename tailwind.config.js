@@ -10,6 +10,7 @@ module.exports = {
                 'primary-main-color': '#1d60aa',
                 'primary-medium-color': '#4ba1ed',
                 'primary-light-color': '#aae0fa',
+                'light-background-color': '#f5f9fc',
                 'g': '#696969',
                 'text-color': '#828282',
                 'text-color99': '#a4a6a8',
@@ -53,7 +54,9 @@ module.exports = {
                 }
             },
         },
-
+        clipPath: {
+            right:'polygon(0 0, 43vw 0%, 100% 100%, 0% 100%)',
+        },
         accentColor: ({theme}) => ({
             ...theme('colors'),
             auto: 'auto',
@@ -352,6 +355,7 @@ module.exports = {
         },
         fontFamily: {
             sans: [
+                'Open Sans',
                 'ui-sans-serif',
                 'system-ui',
                 '-apple-system',
@@ -377,6 +381,12 @@ module.exports = {
                 '"Liberation Mono"',
                 '"Courier New"',
                 'monospace',
+            ],
+            title: [
+                'Alumni Sans'
+            ],
+            regular: [
+                'Rubik'
             ],
         },
         fontSize: {

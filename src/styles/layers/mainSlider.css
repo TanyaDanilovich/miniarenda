@@ -1,0 +1,66 @@
+
+.swiper-button-my{
+    @apply absolute top-1/2 z-20 w-[60px] h-[50px] bg-transparent flex text-primary-light-color
+}
+
+.swiper-button-prev-my{
+    @apply left-3 justify-start
+}
+
+.swiper-button-next-my{
+    @apply right-3 justify-end
+}
+
+.swiper-button-my svg{
+    @apply fill-primary-light-color z-30 scale-50
+}
+
+.swiper-button-my:hover svg{
+    @apply fill-primary-white-color
+}
+
+.swiper-button-prev-my svg{
+    @apply pl-3
+}
+
+.swiper-button-next-my svg{
+    @apply pr-3
+}
+
+.mainSwiper{
+    max-height:85vh;
+    overflow:hidden;
+}
+
+.mainSwiper:after{
+    width:100%;
+    height:10rem;
+    content:'';
+    position:absolute;
+    bottom:0;
+    background-color:transparent;
+    border-bottom:calc(var(--doublePseudoElementsWidth) * 2) solid #ffffff;
+    border-left:100vw solid transparent;
+    z-index:30;
+}
+
+.swiper-button-my:before{
+    position:absolute;
+    content:'';
+    width:60px;
+    height:50px;
+}
+
+.swiper-button-my:hover:before{
+    border-top:50px solid var(--primary-dark-color);
+}
+
+.swiper-button-prev-my:before{
+    border-top:50px solid var(--primary-light-color);
+    border-right:calc(var(--pseudoElementsWidth) / 2) solid transparent;
+}
+
+.swiper-button-next-my:before{
+    border-top:50px solid white;
+    border-left:calc(var(--pseudoElementsWidth) / 2) solid transparent;
+}

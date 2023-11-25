@@ -1,0 +1,23 @@
+.navBefore {
+  /*position:absolute;*/
+  width: 0;
+  height: 0;
+  border-top: 80px solid var(--primary-main-color);
+  border-right: var(--pseudoElementsWidth) solid transparent;
+}
+
+.navAfter {
+  /*position:absolute;*/
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-right: var(--pseudoElementsWidth) solid var(--primary-medium-color);
+}
+
+#navigation-phone:hover svg {
+  @apply animate-swing
+}
+
+.my-border {
+  @apply border-amber-800 border-4
+}
