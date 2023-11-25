@@ -1,0 +1,20 @@
+
+.page-transition {
+  @apply transition ease-in-out delay-150 duration-300
+}
+
+.animate-ticker {
+  @apply before:-translate-x-full before:opacity-0 before:transition-[all] before:duration-1000 before:w-full before:content-[''] before:h-1.5 before:bg-primary-medium-color before:block before:absolute before:top-0 -left-3 before:right-0
+}
+
+.animate-ticker:hover {
+  @apply before:translate-x-0 before:opacity-100 before:transition-[all] before:duration-1000 before:w-full
+}
+
+.animate-img {
+  @apply before:z-[15] before:transition-[all] before:duration-500 before:w-full before:content-[''] before:h-0 before:bg-black before:opacity-20 before:block before:absolute before:top-0 left-0
+}
+
+.animate-img:hover {
+  @apply before:top-auto before:bottom-0 before:h-full before:transition-[all] before:duration-1000 before:delay-150
+}

@@ -1,0 +1,12 @@
+/*button.css*/
+.button{
+    @apply tracking-[0.2em] font-title text-base page-transition lowercase hover:scale-[1.05]  hover:translate-x-1  hover:text-primary-dark-color px-3 py-1
+}
+
+.colored-button{
+    @apply text-white bg-primary-medium-color
+}
+
+.transparent-button{
+    @apply text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color
+}

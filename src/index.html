@@ -12,9 +12,15 @@
     <!--		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"-->
     <!--		rel="stylesheet">-->
     
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;500;600;700;800;900&family=Open+Sans&family=Rubik&display=swap"
+          rel = "stylesheet">
+    
+    
     <link rel = "stylesheet" href = "./styles.css">
     <link rel = "stylesheet" href = "swiper/swiper-bundle.min.css"/>
-    <link rel = "stylesheet" href = "swiper/customizeSwiper.css"/>
+    
     
     <!--    <link-->
     <!--            rel = "stylesheet"-->
@@ -302,25 +308,30 @@
     </section>
     
     <section id = "services-section" class = "services-section">
-        <div class = "container mx-auto">
-            <h2>Услуги мини-экскаваторов</h2>
-            <p>Услуги</p>
-            <div class = "flex flex-wrap gap-2">
-                <section id = "services-excavator-rent" class = "w-1/4 flex flex-col-reverse relative">
+        <div class = "container mx-auto max-w-7xl relative">
+            <h2 class = "section-title">Услуги мини-экскаваторов</h2>
+            <!--            <p class = "section-background-title">Услуги</p>-->
+            <div class = "flex flex-wrap justify-between">
+                <section id = "services-excavator-rent" class = "services-item ">
                     <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
                         <a href = "#">
-                            <h3 class = "uppercase text-primary-medium-color pb-3">Аренда
-                                                                                   мини-экскаваторов</h3>
+                            <h3 class = "min-h-[80px] font-semibold text-2xl uppercase text-primary-medium-color pb-3 font-title tracking-wide ">
+                                Аренда
+                                мини-экскаваторов</h3>
                         </a>
-                        <p class = "text-text-color text-justify pb-3">Аренда мини-экскаватора - превосходное решение
-                                                                       для
-                                                                       выполнения
-                                                                       любого типа строительных работ
-                                                                       в
-                                                                       условиях
-                                                                       ограниченного пространства</p>
+                        <p class = "text-text-color text-justify pb-3 min-h-[110px] max-h-[125px]">Аренда
+                                                                                                   мини-экскаватора -
+                                                                                                   превосходное решение
+                                                                                                   для
+                                                                                                   выполнения
+                                                                                                   любого типа
+                                                                                                   строительных работ
+                                                                                                   в
+                                                                                                   условиях
+                                                                                                   ограниченного
+                                                                                                   пространства</p>
                         <a href = "#">
-                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                            <button class = "button colored-button">
                                 Подробнее
                             </button>
                         </a>
@@ -335,48 +346,24 @@
                     </div>
                 
                 </section>
-                <section id = "services-boor" class = "w-1/4 flex flex-col-reverse relative">
+                <section id = "services-boor" class = "services-item">
                     <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
                         <a href = "#">
-                            <h3 class = "uppercase text-primary-medium-color pb-3">Аренда ямобура</h3>
+                            <h3 class = "min-h-[80px] font-semibold text-2xl uppercase text-primary-medium-color pb-3 font-title tracking-wider ">
+                                Аренда
+                                ямобура</h3>
                         </a>
-                        <p class = "text-text-color text-justify pb-3">Аренда ямобура (гидробура, шнекового бура) в
-                                                                       Минске на базе мини-экскаватора и
-                                                                       мини-погрузчика
-                                                                       для
-                                                                       бурения отверстий глубиной до 2,5 м диаметром от
-                                                                       20 до 60 см. Отверстия диаметром 50 и 60 см
-                                                                       можно
-                                                                       пробурить глубиной до 3 м.</p>
+                        <p class = "text-text-color text-justify pb-3 min-h-[110px] max-h-[125px]">Аренда ямобура в
+                                                                                                   Минске на базе
+                                                                                                   мини-экскаватора и
+                                                                                                   мини-погрузчика
+                                                                                                   для
+                                                                                                   бурения отверстий
+                                                                                                   глубиной до 2,5 м
+                                                                                                   диаметром от
+                                                                                                   20 до 60 см.</p>
                         <a href = "#">
-                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
-                                Подробнее
-                            </button>
-                        </a>
-                    </div>
-                    
-                    <div class = "transition animate-img service-img w-full aspect-square relative">
-                        <a href = "#" class = "h-full inline-block">
-                            <img class = " h-full object-cover relative z-10 page-transition"
-                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg"
-                                 alt = "Фото мини экскаватра для аренды">
-                        </a>
-                    </div>
-                
-                </section>
-                
-                <section id = "services-hydraulic-hammer" class = "w-1/4 flex flex-col-reverse relative">
-                    <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
-                        <a href = "#">
-                            <h3 class = "uppercase text-primary-medium-color pb-3">Аренда гидромолота</h3>
-                        </a>
-                        <p class = "text-text-color text-justify pb-3">К вашим услугам аренда техники с гидромолотом.
-                                                                       Гидромолот — сменный вид навесного рабочего
-                                                                       оборудования для экскаваторов, погрузчиков и
-                                                                       прочих
-                                                                       механизмов.</p>
-                        <a href = "#">
-                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                            <button class = "button colored-button">
                                 Подробнее
                             </button>
                         </a>
@@ -392,15 +379,23 @@
                 
                 </section>
                 
-                <section id = "services-earth-work" class = "w-1/4 flex flex-col-reverse relative">
+                <section id = "services-hydraulic-hammer" class = "services-item">
                     <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">
                         <a href = "#">
-                            <h3 class = "uppercase text-primary-medium-color pb-3">Земляные работы</h3>
+                            <h3 class = "min-h-[80px] font-semibold text-2xl uppercase text-primary-medium-color pb-3 font-title tracking-wide ">
+                                Аренда
+                                гидромолота</h3>
                         </a>
-                        <p class = "text-text-color text-justify pb-3">Земляные работы – это один из важнейших этапов
-                                                                       любого строительства.</p>
+                        <p class = "text-text-color text-justify pb-3 min-h-[110px] max-h-[125px]"> Гидромолот — сменный
+                                                                                                    вид навесного
+                                                                                                    рабочего
+                                                                                                    оборудования для
+                                                                                                    экскаваторов,
+                                                                                                    погрузчиков и
+                                                                                                    прочих
+                                                                                                    механизмов.</p>
                         <a href = "#">
-                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">
+                            <button class = "button colored-button">
                                 Подробнее
                             </button>
                         </a>
@@ -415,12 +410,81 @@
                     </div>
                 
                 </section>
-       
+                
+                <!--                <section id = "services-earth-work" class = "w-1/4 flex flex-col-reverse relative">-->
+                <!--                    <div class = "overflow-hidden animate-ticker shadow-extraXL w-11/12 px-3 py-6 relative -top-4 z-20 bg-white  ">-->
+                <!--                        <a href = "#">-->
+                <!--         font-bold            <h3 class = "text-bo text-2xl uppercase text-primary-medium-color pb-3">Земляные работы</h3>-->
+                <!--                        </a>-->
+                <!--                        <p class = "text-text-color text-justify pb-3">Земляные работы – это один из важнейших этапов-->
+                <!--                                                                       любого строительства.</p>-->
+                <!--                        <a href = "#">-->
+                <!--                            <button class = "page-transition uppercase hover:scale-110 text-primary-medium-color border-b-primary-medium-color border-b-[1px] hover:border-b-text-color hover:translate-x-1  hover:text-primary-dark-color">-->
+                <!--                                Подробнее-->
+                <!--                            </button>-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                    -->
+                <!--                    <div class = "transition animate-img service-img w-full aspect-square relative">-->
+                <!--                        <a href = "#" class = "h-full inline-block">-->
+                <!--                            <img class = " h-full object-cover relative z-10 page-transition"-->
+                <!--                                 src = "asetss/images/main-slider/1200px/_DSC4764-1200w.jpg"-->
+                <!--                                 alt = "Фото мини экскаватра для аренды">-->
+                <!--                        </a>-->
+                <!--                    </div>-->
+                <!--                -->
+                <!--                </section>-->
+            
             </div>
         
         </div>
     
     </section>
+    
+    
+    <section id = "action-section" class = "action-section">
+        <div class = "relative">
+            <div class = "action-background absolute w-full h-full left-0 right-0 -z-10"></div>
+            <div class = "flex justify-around container mx-auto max-w-7xl relative">
+                <div class = "w-1/2 px-16 m-auto bg-white my-20"></div>
+                <div class = "w-1/2 pr-16 pl-32 py-16 m-auto bg-white my-20 clip-path">
+                    <p class = "mb-4 text-primary-main-color font-bold font-title text-4xl tracking-wider">Оставьте
+                                                                                                           заявку прямо
+                                                                                                           сейчас </p>
+                    <p class = " text-text-color font-regular text-lg tracking-wider">И мы свяжемся
+                                                                                      с вами. </p>
+                    
+                    <form id = "action-form" class = "callback-form">
+                        
+                        <input type = "tel" class = "modal-tel _req" name = "phone" id = "modal-client-te=l-"
+                               placeholder = "Номер телефона с кодом" pattern = "[0-9]" required>
+                        <input type = "tel" class = "modal-tel _req" name = "phone" id = "modal-client-tel-"
+                               placeholder = "Номер телефона с кодом" pattern = "[0-9]" required>
+                        <button type = "submit" class = "button button-colored modal__button">Отправить</button>
+                    </form>
+                    
+                    
+                    <form>
+                        <div class = "flex flex-col p-1.5 overflow-hidden border rounded-lg dark:border-gray-600 lg:flex-row dark:focus-within:border-blue-300 focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
+                            <input class = "px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none dark:bg-gray-800 dark:placeholder-gray-400 focus:placeholder-transparent dark:focus:placeholder-transparent"
+                                   type = "text" name = "email" placeholder = "Enter your email"
+                                   aria-label = "Enter your email">
+                            <input class = "px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none dark:bg-gray-800 dark:placeholder-gray-400 focus:placeholder-transparent dark:focus:placeholder-transparent"
+                                   type = "text" name = "email" placeholder = "Enter your email"
+                                   aria-label = "Enter your email">
+                            <button class = "px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">
+                                subscribe
+                            </button>
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        
+        
+        </div>
+    </section>
+    
     
     <section id = "machinery-section" class = "machinery-section">
         <h2>Наша техника</h2>
@@ -529,27 +593,6 @@
         </section>
     
     </section>
-    
-    <section id = "about-section" class = "about-section">
-        <h2>О компании </h2>
-        <p>компания в цифрах</p>
-        <p>
-            Наша компания действует на белорусском рынке аренды мини-техники на протяжении пяти лет. За это время у
-            нас
-            сформировался обширный, парк техники (мини-экскаваторы, мини-погрузчики, эвакуаторы), который мы
-            полность
-            обновили, и ежегодно пополняем только новыми единицами техники, которая всегда находится в отличном
-            состоянии, сложилась собственная материально-техническая и ремонтная база, а также автопарк для доставки
-            техники по г. Минску, Минской области и территории Республики Беларусь.
-            
-            Компания СтройМиниТехника оказывает услуги по аренде мини-техники как строительным и производственным
-            компаниям, так и представителям малого бизнеса, также и частным заказчикам. Мини-экскаваторы зарубежного
-            производства, которые предлагает арендовать наша компания, не подвержены поломкам, могут бесперебойно
-            работать на протяжении долгого времени. подробнее
-        
-        </p>
-    </section>
-    
     
     <section id = "benefit-section" class = "benefit-section">
         

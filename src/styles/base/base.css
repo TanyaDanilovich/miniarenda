@@ -1,0 +1,13 @@
+/*base*/
+
+body{
+    @apply font-regular
+}
+
+.section-title{
+    @apply tracking-widest font-title mt-12 py-12 text-5xl text-primary-dark-color capitalize text-center pt-5 font-bold
+}
+
+.section-background-title{
+    @apply tracking-widest font-title text-9xl text-primary-medium-color capitalize opacity-[0.1] relative text-center -translate-y-1/4 font-extrabold
+}

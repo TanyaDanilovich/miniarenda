@@ -1,0 +1,4 @@
+
+.services-item{
+    @apply w-[31%] flex flex-col-reverse relative;
+}
