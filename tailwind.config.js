@@ -25,6 +25,7 @@ module.exports = {
             boxShadow: {
                 extraXL: '0px 0px 22px 19px rgb(198 199 200 / 19%)',
 
+
             },
             animation: {
                 swing: 'swing 5s'
@@ -55,7 +56,7 @@ module.exports = {
             },
         },
         clipPath: {
-            right:'polygon(0 0, 43vw 0%, 100% 100%, 0% 100%)',
+            right: 'polygon(0 0, 43vw 0%, 100% 100%, 0% 100%)',
         },
         accentColor: ({theme}) => ({
             ...theme('colors'),
